@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b20",
+      "description": "A Great movie!",
+      "score": 5,
+      "movieId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b21",
+      "description": "Mindblowing movie",
+      "score": 5,
+      "movieId": "1",
+      "userId": "2"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b22",
+      "description": "Breathtaking and thrilling",
+      "score": 4,
+      "movieId": "1",
+      "userId": "3"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b25",
+      "description": "A Great movie!",
+      "score": 4,
+      "movieId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b26",
+      "description": "Mindblowing movie",
+      "score": 4,
+      "movieId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b27",
+      "description": "Breathtaking and thrilling",
+      "score": 4,
+      "movieId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b30",
+      "description": "Flop",
+      "score": 1,
+      "movieId": "3",
+      "userId": "1"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b31",
+      "description": "Couldn't watch it till the end",
+      "score": 2,
+      "movieId": "3",
+      "userId": "2"
+    },
+    {
+      "id": "6f076daa-a80f-447d-9467-1c0ad1046b32",
+      "description": "Nice one",
+      "score": 4,
+      "movieId": "3",
+      "userId": "3"
+    }
+  ]
+}

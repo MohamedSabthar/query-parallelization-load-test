@@ -1,0 +1,381 @@
+{
+  "data": {
+    "random": "random",
+    "movieStream": [
+      {
+        "id": "1",
+        "title": "Inception",
+        "year": 2010,
+        "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+        "director": {
+          "id": "1",
+          "name": "Christopher Nolan",
+          "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time.",
+          "movies": [
+            {
+              "id": "1",
+              "title": "Inception",
+              "year": 2010,
+              "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "2",
+              "title": "The Dark Knight",
+              "year": 2008,
+              "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "3",
+              "title": "The Matrix",
+              "year": 1999,
+              "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+              "rating": 0,
+              "director": {
+                "id": "7",
+                "name": "The Wachowskis",
+                "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "The Dark Knight",
+        "year": 2008,
+        "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "director": {
+          "id": "1",
+          "name": "Christopher Nolan",
+          "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time.",
+          "movies": [
+            {
+              "id": "1",
+              "title": "Inception",
+              "year": 2010,
+              "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "2",
+              "title": "The Dark Knight",
+              "year": 2008,
+              "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "3",
+              "title": "The Matrix",
+              "year": 1999,
+              "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+              "rating": 0,
+              "director": {
+                "id": "7",
+                "name": "The Wachowskis",
+                "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "The Matrix",
+        "year": 1999,
+        "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+        "director": {
+          "id": "7",
+          "name": "The Wachowskis",
+          "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8.",
+          "movies": [
+            {
+              "id": "1",
+              "title": "Inception",
+              "year": 2010,
+              "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "2",
+              "title": "The Dark Knight",
+              "year": 2008,
+              "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+              "rating": 0,
+              "director": {
+                "id": "1",
+                "name": "Christopher Nolan",
+                "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+              }
+            },
+            {
+              "id": "3",
+              "title": "The Matrix",
+              "year": 1999,
+              "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+              "rating": 0,
+              "director": {
+                "id": "7",
+                "name": "The Wachowskis",
+                "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "directorsStream": [
+      {
+        "id": "1",
+        "name": "Christopher Nolan",
+        "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time.",
+        "movies": [
+          {
+            "id": "1",
+            "title": "Inception",
+            "year": 2010,
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "2",
+            "title": "The Dark Knight",
+            "year": 2008,
+            "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "3",
+            "title": "The Matrix",
+            "year": 1999,
+            "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "rating": 0,
+            "director": {
+              "id": "7",
+              "name": "The Wachowskis",
+              "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+            }
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Peter Jackson",
+        "bio": "Peter Jackson is a New Zealand film director, screenwriter, and film producer. He is best known as the director, writer, and producer of the Lord of the Rings trilogy and the Hobbit trilogy.",
+        "movies": [
+          {
+            "id": "1",
+            "title": "Inception",
+            "year": 2010,
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "2",
+            "title": "The Dark Knight",
+            "year": 2008,
+            "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "3",
+            "title": "The Matrix",
+            "year": 1999,
+            "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "rating": 0,
+            "director": {
+              "id": "7",
+              "name": "The Wachowskis",
+              "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+            }
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Frank Darabont",
+        "bio": "Frank Darabont is an American film director, screenwriter, and producer. He is best known for directing the movies The Shawshank Redemption, The Green Mile, and The Mist.",
+        "movies": [
+          {
+            "id": "1",
+            "title": "Inception",
+            "year": 2010,
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "2",
+            "title": "The Dark Knight",
+            "year": 2008,
+            "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "3",
+            "title": "The Matrix",
+            "year": 1999,
+            "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "rating": 0,
+            "director": {
+              "id": "7",
+              "name": "The Wachowskis",
+              "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+            }
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "The Wachowskis",
+        "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8.",
+        "movies": [
+          {
+            "id": "1",
+            "title": "Inception",
+            "year": 2010,
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "2",
+            "title": "The Dark Knight",
+            "year": 2008,
+            "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "rating": 0,
+            "director": {
+              "id": "1",
+              "name": "Christopher Nolan",
+              "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+            }
+          },
+          {
+            "id": "3",
+            "title": "The Matrix",
+            "year": 1999,
+            "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "rating": 0,
+            "director": {
+              "id": "7",
+              "name": "The Wachowskis",
+              "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+            }
+          }
+        ]
+      }
+    ],
+    "getAllUsers": [
+      {
+        "id": 1,
+        "userInfoArr": [
+          {
+            "id": 1,
+            "name": "JohnDoe",
+            "email": "john.doe@example.com",
+            "total": 0
+          }
+        ],
+        "summary": {
+          "id": 1,
+          "name": "JohnDoe",
+          "email": "john.doe@example.com",
+          "total": 51
+        }
+      },
+      {
+        "id": 2,
+        "userInfoArr": [
+          {
+            "id": 2,
+            "name": "JaneSmith",
+            "email": "jane.smith@example.com",
+            "total": 0
+          }
+        ],
+        "summary": {
+          "id": 2,
+          "name": "JaneSmith",
+          "email": "jane.smith@example.com",
+          "total": 62
+        }
+      },
+      {
+        "id": 3,
+        "userInfoArr": [
+          {
+            "id": 3,
+            "name": "BobJohnson",
+            "email": "bob.johnson@example.com",
+            "total": 0
+          }
+        ],
+        "summary": {
+          "id": 3,
+          "name": "BobJohnson",
+          "email": "bob.johnson@example.com",
+          "total": 47
+        }
+      }
+    ]
+  }
+}

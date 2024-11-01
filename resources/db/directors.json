@@ -1,0 +1,24 @@
+{
+  "directors": [
+    {
+      "id": "1",
+      "name": "Christopher Nolan",
+      "bio": "Best known for his unique storytelling, Christopher Nolan is one of the most acclaimed directors of the 21st century. He has directed some of the most successful and critically acclaimed movies of all time."
+    },
+    {
+      "id": "2",
+      "name": "Peter Jackson",
+      "bio": "Peter Jackson is a New Zealand film director, screenwriter, and film producer. He is best known as the director, writer, and producer of the Lord of the Rings trilogy and the Hobbit trilogy."
+    },
+    {
+      "id": "3",
+      "name": "Frank Darabont",
+      "bio": "Frank Darabont is an American film director, screenwriter, and producer. He is best known for directing the movies The Shawshank Redemption, The Green Mile, and The Mist."
+    },
+    {
+      "id": "7",
+      "name": "The Wachowskis",
+      "bio": "The Wachowskis are American film directors, writers, and producers. They are best known for directing the Matrix trilogy and the Netflix series Sense8."
+    }
+  ]
+}

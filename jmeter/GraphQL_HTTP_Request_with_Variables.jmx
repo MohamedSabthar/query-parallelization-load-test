@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">100</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GraphQL HTTP Request">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">9090</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;directorInput&quot;: {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Sparrow&quot;,
+    &quot;bio&quot;: &quot;nice&quot;
+  },
+  &quot;directorInputArr&quot;: [
+    {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;name&quot;: &quot;Sparrow&quot;,
+      &quot;bio&quot;: &quot;nice&quot;
+    }
+  ],
+  &quot;userIds&quot;: [
+    1,
+    2,
+    3
+  ]
+},&quot;query&quot;:&quot;query A($directorInput: DirectorInputType!, $directorInputArr: [DirectorInputType!]!, $userIds: [Int!]!) {\n  random\n  movieStream(director: $directorInput) {\n    id\n    title\n    year\n    description\n    director {\n      id\n      name\n      bio\n      movies {\n        id\n        title\n        year\n        description\n        rating\n        director {\n          id\n          name\n          bio\n        }\n      }\n    }\n  }\n  directorsStream(directorInputs: $directorInputArr) {\n    id\n    name\n    bio\n    movies {\n      id\n      title\n      year\n      description\n      rating\n      director {\n        id\n        name\n        bio\n      }\n    }\n  }\n  getAllUsers(ids: $userIds) {\n    id\n    userInfoArr {\n      id\n      name\n      email\n      total\n    }\n    summary {\n      id\n      name\n      email\n      total\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="GraphQLHTTPSampler.query">query A($directorInput: DirectorInputType!, $directorInputArr: [DirectorInputType!]!, $userIds: [Int!]!) {
+  random
+  movieStream(director: $directorInput) {
+    id
+    title
+    year
+    description
+    director {
+      id
+      name
+      bio
+      movies {
+        id
+        title
+        year
+        description
+        rating
+        director {
+          id
+          name
+          bio
+        }
+      }
+    }
+  }
+  directorsStream(directorInputs: $directorInputArr) {
+    id
+    name
+    bio
+    movies {
+      id
+      title
+      year
+      description
+      rating
+      director {
+        id
+        name
+        bio
+      }
+    }
+  }
+  getAllUsers(ids: $userIds) {
+    id
+    userInfoArr {
+      id
+      name
+      email
+      total
+    }
+    summary {
+      id
+      name
+      email
+      total
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;directorInput&quot;: {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;Sparrow&quot;,
+    &quot;bio&quot;: &quot;nice&quot;
+  },
+  &quot;directorInputArr&quot;: [
+    {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;name&quot;: &quot;Sparrow&quot;,
+      &quot;bio&quot;: &quot;nice&quot;
+    }
+  ],
+  &quot;userIds&quot;: [
+    1,
+    2,
+    3
+  ]
+}</stringProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">int min = 1
+int max = 10000000
+int randomValue = (int)(Math.random() * (max - min + 1)) + min
+
+vars.put(&quot;random&quot;, String.valueOf(randomValue))
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">userId</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">random</stringProp>
+                <stringProp name="Header.value">${random}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
+def response = new JsonSlurper().parseText(prev.getResponseDataAsString())
+def expectedResponseFile = new File(&quot;expected.json&quot;)
+def expected = new JsonSlurper().parseText(expectedResponseFile.text)
+String random = &quot;&quot;
+prev.getRequestHeaders().split(&quot;\n&quot;).each { line -&gt;
+    // Trim whitespace and split the line into key and value
+    String[] parts = line.trim().split(&quot;: &quot;, 2) // Split on the first occurrence of &quot;: &quot;
+    // Check if the key matches &quot;random&quot;
+    if (parts.length == 2 &amp;&amp; parts[0].equalsIgnoreCase(&quot;random&quot;)) {
+        random = parts[1] // Assign the value to the random variable
+        log.info(&quot;Random header found with value: ${random}&quot;) // Log the found value
+    }
+}
+expected.data.random = random;
+
+if (response != expected) {
+	prev.setSuccessful(false)
+	prev.setResponseMessage(&quot;Payload Assertion Failed = actual: &quot; 
+		+ JsonOutput.toJson(response) + &quot; expected: &quot; + JsonOutput.toJson(expected))
+}</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,124 @@
+query A(
+  $directorInput: DirectorInputType!
+  $movieInput: [MovieInputType!]!
+  $ids: [String!]!
+  $userInput: [UserInputType!]!
+  $directorInputArr: [DirectorInputType!]!
+) {
+  random
+  movieStream(director: $directorInput) {
+    id
+    title
+    year
+    description
+    director {
+      id
+      name
+      bio
+      movies {
+        id
+        title
+        year
+        description
+        rating
+        director {
+          id
+          name
+          bio
+          movies {
+            id
+            title
+            director {
+              id
+              name
+              bio
+            }
+          }
+        }
+      }
+    }
+  }
+  movies(inputs: $movieInput) {
+    id
+    title
+    year
+    description
+    director {
+      id
+      name
+      bio
+      movies
+    }
+    score
+    reviewers
+  }
+  getMoviesById(ids: $ids) {
+    id
+    title
+    year
+    description
+    rating
+    director {
+      movies {
+        id
+        title
+        year
+        description
+        rating
+      }
+    }
+  }
+  users(userInput: $userInput) {
+    id
+    name
+    email
+    roles
+  }
+  directorsStream(directorInputs: $directorInputArr) {
+    id
+    name
+    bio
+    movies {
+      id
+      title
+      year
+      description
+      rating
+      director {
+        id
+        name
+        bio
+      }
+    }
+  }
+  directors(directors: $directorInputArr) {
+    id
+    name
+    bio
+    movies
+  }
+  director(id: "1") {
+    id
+    name
+    bio
+    movies {
+      id
+      title
+      year
+      description
+      rating
+    }
+  }
+  d2: director(id: "2") {
+    id
+    name
+    bio
+    movies {
+      id
+      title
+      year
+      description
+      rating
+    }
+  }
+}
