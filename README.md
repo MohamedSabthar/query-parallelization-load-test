@@ -9,19 +9,46 @@ Here is the summary of the load test:
 
 ### Load Test Cases
 The first 2 tests below used in-memory Ballerina tables as the data source.
-1. **Case 1:** No simulated delay, *N = 1000*  
-  **sequencial:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/c8b95e19-c469-4811-a035-ac1c3777530a">
-  **parallel:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/15c7eb1a-bc04-4e8f-9f52-91499f3e6588">
+1. **Case 1:** No simulated delay, *N = 1000*
+   <table>
+    <td>
+     <center><b>sequential</b></center>
+   <img width="800" alt="image" src="https://github.com/user-attachments/assets/a2e7ff23-4de3-489d-8889-096914a28a50">
+    </td>
+    <td>
+       <center><b>parallel</b></center>
+   <img width="800" alt="image" src="https://github.com/user-attachments/assets/f3d06be3-ead9-44ec-9c34-af71dd368fb3">
+    </td>
+   </table>
 
 2. **Case 2:** Simulated network delay of 1 second per database call, *N = 100*  
-  **sequencial:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/5eb9123b-cfdc-4c61-8d0e-b5ed0fbaecbb">
-  **parallel:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/1f1986d0-bb60-441c-bdb8-0a9c2b6bbaab">
+   <table>
+    <td>
+     <center><b>sequential</b></center>
+     <img width="801" alt="image" src="https://github.com/user-attachments/assets/3567fc8f-e596-4ea0-a08a-d7d798abc017">
+         </td>
+    <td>
+      <center><b>parallel</b></center>
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/0bc485af-584a-4503-a9a5-9b50a43bd2aa">
+    </td>
+   </table>
 
 3. **Case 3:** Tests with databases - Redshift and MongoDB (running in Docker containers) to assess latency when queries are executed on both databases.
-  **sequencial:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/b92108f4-38d4-47dd-a049-cfb4ba30bec2">
-  **parallel:**<img width="1231" alt="image" src="https://github.com/user-attachments/assets/4d883e81-6392-42f0-9d39-3332e2e29a45">
+<table>
+    <td>
+     <center><b>sequential</b></center>
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/931f3039-d09d-420f-a659-85ac28bd5c24">
+    </td>
+ <td>
+  <center><b>parallel</b></center>
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/621956fa-fa33-46e3-87a2-13f6f3763ee6">
+  </td>
+   </table>
 
-<img width="1231" alt="image" src="https://github.com/user-attachments/assets/f72dddb3-1e67-452a-be8c-48062de55eb5">
+
+
+### Comparison
+<img width="1231" alt="image" src="https://github.com/user-attachments/assets/1e30d4ae-0f78-4249-8619-c841ddd3d183">
 In all three cases, the parallel improvement reduces latency.
 
 
@@ -29,8 +56,7 @@ In all three cases, the parallel improvement reduces latency.
 A test with a large complex query, resulting in a substantially big response payload (around 12MB), to verify if there were any concurrency issues. The configuration for this test was:
 - **Thread Count:** 10
 - **Loop Count:** _N_=1000
-
-<img width="1231" alt="image" src="https://github.com/user-attachments/assets/86f20da3-19d2-47e3-98f2-f9459354e957">
+<img width="833" alt="image" src="https://github.com/user-attachments/assets/2ec96d03-6efd-4193-b1c4-fbcda731b227">
 
 
 As shown in the chart, no errors were encountered (no response assertion failure), indicating no concurrency issues were found during the testing process.
